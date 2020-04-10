@@ -2,7 +2,6 @@ import os
 from pydub import AudioSegment
 
 def audio2wav():
-  AudioSegment.converter = "./ffmpeg/bin/ffmpeg.exe"
   path = "./input/"
   for audio in os.listdir(path):
     file_name, file_extension = os.path.splitext(audio)
