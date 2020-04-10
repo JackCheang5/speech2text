@@ -22,8 +22,9 @@ def multi_files_converting():
     file_extension_fin = file_extension.replace('.', '')
     audio_path = input_path + audio
     text_path = output_path + file_name + ".txt"
-    fw = open(text_path, 'w', encoding="CP950")
+    fw = open(text_path, 'w', encoding="UTF-8")
     text = audio2text(audio_path)
     fw.write(text)
     fw.close()
-    
+  
+multi_files_converting()
